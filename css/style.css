@@ -1,0 +1,63 @@
+* {
+    /*border: 1px solid red;*/
+    margin: 0px;
+}
+
+body {
+    background-color: #EFF0F3!important;
+}
+
+.container {
+    margin-top: 50px;
+    width: 25%!important;
+}
+
+form {
+    background: white;
+    border: 2px solid black;
+    border-radius: 10px;
+    padding: 20px 10px;
+    margin-bottom: 40px;
+}
+
+#task_input {
+    width: 60%;
+    float: left;
+    margin-right: 5%;
+ }
+
+
+
+.task {
+    height: 50px;
+    list-style: none;
+    padding: 10px;
+    margin-bottom: 10px;
+    background: white;
+    border: 1px solid silver;
+    border-radius: 5px;
+}
+
+task:hover {
+    background: silver;
+}
+
+.task button {
+    border: 0;
+    color: white;
+    font-size: 13px;
+    background: #db5757;
+    border-radius: 3px;
+}
+.task button:hover {
+    background: #a94040;
+    color: white;
+}
+
+.task p  {
+    float: left;
+}
+
+.task a{
+    float: right;
+}
