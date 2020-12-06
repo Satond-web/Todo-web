@@ -21,12 +21,14 @@ form {
 }
 
 #task_input {
-    width: 60%;
+    width: 80%;
     float: left;
     margin-right: 5%;
  }
 
-
+.btn-success {
+    width: 15%;
+}
 
 .task {
     height: 50px;
@@ -60,4 +62,13 @@ task:hover {
 
 .task a{
     float: right;
+}
+
+
+@media only screen and (max-width: 1700px) {
+
+    .container {
+        width: 50% !important;
+    }
+
 }
