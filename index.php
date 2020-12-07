@@ -13,7 +13,7 @@
 
         <?php if ( isset($_GET["error"]) ) echo "<div style='color:red'>" . $_GET["error"] . "</div>"; ?>
 
-        <form action="  add.php" method="POST">
+        <form action="/add.php" method="POST">
             <input type="text" name="task" id="task_input" placeholder="Learn php..." class="form-control">
             <button type="submit" name="send_task" class="btn btn-success">Save</button>
         </form>
@@ -25,7 +25,7 @@
         $query = get_tasks($pdo);
         while ($row = $query->fetch(PDO::FETCH_OBJ))
         {
-            echo "<div class='task'> <b>" . $row->task . "</b><a href='del.php?id=" . $row->id . "'><button class='btn'>Done</button></a></div>";
+            echo "<div class='task'> <b>" . $row->task . "</b><a href='/del.php?id=" . $row->id . "'><button class='btn'>Done</button></a></div>";
         }
 
         ?>
