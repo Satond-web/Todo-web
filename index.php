@@ -27,7 +27,6 @@
         {
             echo "<div class='task'> <b>" . $row->task . "</b><a href='/del.php?id=" . $row->id . "'><button class='btn'>Done</button></a></div>";
         }
-
         ?>
     </div>
 </body>
