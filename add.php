@@ -1,16 +1,16 @@
 <?php
 
-$task = $_POST["task"];
+    $task = $_POST["task"];
 
-if ($task == "")
-{
-    header("Location: /?error=Enter a valid task");
-    exit();
-}
+    if ($task == "")
+    {
+        header("Location: /?error=Enter a valid task");
+        exit();
+    }
 
-require "db.php";
+    require "db.php";
 
-$query = $pdo->prepare("INSERT INTO tasks (task) VALUES (?)");
-$query->execute([$task]);
+    $query = $pdo->prepare("INSERT INTO tasks (task) VALUES (?)");
+    $query->execute([$task]);
 
-header("Location: /");
+    header("Location: /");
